@@ -1,0 +1,26 @@
+# === BACKEND (Java / Maven) ===
+backend/target/
+backend/.mvn/
+backend/mvnw
+backend/mvnw.cmd
+*.class
+*.jar
+*.war
+*.log
+
+# === FRONTEND (Node / Angular) ===
+frontend/node_modules/
+frontend/dist/
+frontend/.angular/
+frontend/.vite/
+frontend/.env.local
+frontend/package-lock.json
+
+# === IDE & OS ===
+.idea/
+*.iml
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
