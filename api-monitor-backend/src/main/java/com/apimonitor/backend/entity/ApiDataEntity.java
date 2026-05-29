@@ -7,10 +7,13 @@ import java.util.UUID;
 
 @Entity
 @Table(name = "api_data")
-@Data
-@Builder
-@NoArgsConstructor
 @AllArgsConstructor
+@NoArgsConstructor
+@Getter
+@Setter
+@ToString
+@Builder
+@EqualsAndHashCode
 public class ApiDataEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
