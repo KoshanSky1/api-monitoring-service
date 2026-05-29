@@ -48,7 +48,7 @@ npm -v           # Должно быть: 9.x.x или выше CLI
 ## 🚀 Пошаговый запуск
 1️⃣ Клонируйте репозиторий
 
-git clone <repository-url>
+git clone [<repository-url>](https://github.com/KoshanSky1/api-monitoring-service/tree/main)
 
 cd api-monitoring-service
 
