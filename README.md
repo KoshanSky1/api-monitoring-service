@@ -1,4 +1,44 @@
-📸 
+## 🔍 API Monitoring Service
+
+Full-stack приложение для мониторинга публичных API, сохранения результатов, обработки ошибок с помощью Spring Retry и асинхронной отправки событий в Apache Kafka.
+
+## 🚀 О проекте
+Система выполняет периодический опрос публичного API (например, курсов криптовалют), сохраняет результаты в базу данных и отправляет события в Kafka.
+
+**Ключевые возможности:**
+- 🔄 **Планировщик**: Опрос API каждую минуту через `@Scheduled`
+- 🛡️ **Надежность**: Повторные попытки запроса при ошибках (3 попытки, exponential backoff) через Spring Retry
+- ⚡ **Асинхронность**: Отправка успешных ответов в топик `api-data`, ошибок — в `api-errors` через Apache Kafka
+- 🔐 **Безопасность**: Защита REST API через Spring Security (Basic Auth) с разграничением ролей (USER/ADMIN)
+- 🎨 **Интерфейс**: Современный SPA на Angular 17 для просмотра статистики и CRUD-операций
+
+## 🛠 Технологии
+
+**Backend**
+- Java 17
+- Spring Boot 3.2.x
+- Spring Data JPA (Hibernate)
+- Spring Security (Basic Auth)
+- Spring Retry (Exponential Backoff)
+- Apache Kafka (Spring Kafka)
+- Database: PostgreSQL (Production) / H2 (Dev)
+- Build Tool: Maven
+
+**Frontend**
+- Angular 17+ (Standalone Components)
+- RxJS (Reactive Programming)
+- Axios / HttpClient (HTTP Client)
+- CSS3 (Custom Styles, No heavy UI libs)
+
+## ⚡ Быстрый старт
+
+### 🔧 Предварительные требования
+```bash
+# Проверка версий
+java -version          # JDK 17 или выше
+node -v                # Node.js 18+
+npm -v                 # npm 9+
+
 JDK 17 или выше (java -version)
 Node.js 18+ и npm (node -v)
 Apache Kafka & Zookeeper (или KRaft) запущены локально на порту 9092
