@@ -53,18 +53,32 @@ git clone <repository-url>
 cd api-monitoring-service
 
 2️⃣ Запуск Backend
-# Перейдите в папку backend
+Перейдите в папку backend
 cd backend
 
-# Запуск через Maven Wrapper (Linux/Mac)
+Запуск через Maven Wrapper (Linux/Mac)
 ./mvnw spring-boot:run
 
-# Для Windows
+Для Windows
 mvnw.cmd spring-boot:run
 
-# ── Альтернативный способ: сборка и запуск JAR ──
+Альтернативный способ: сборка и запуск JAR ──
 ./mvnw clean package -DskipTests
 java -jar target/api-monitoring-service.jar
+
+Backend будет доступен на: http://localhost:8080
+3️⃣ Запуск Frontend
+Откройте новый терминал и перейдите в папку frontend
+cd frontend
+
+Установите зависимости (только при первом запуске)
+npm install
+
+Запустите сервер разработки
+npx ng serve
+
+Или, если Angular CLI установлен глобально:
+ng serve
 
 ## 📸 Скриншоты
  <img width="1228" height="1082" alt="2026-05-28_10-29-36" src="https://github.com/user-attachments/assets/226cbd67-5b0d-44be-9cc2-9d28786969db" />
