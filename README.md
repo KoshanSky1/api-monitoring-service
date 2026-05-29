@@ -45,9 +45,11 @@ java -version    # Должно быть: java version "17.x.x"
 node -v          # Должно быть: v18.x.x или выше
 npm -v           # Должно быть: 9.x.x или выше CLI
 
-🚀 Пошаговый запуск
+## 🚀 Пошаговый запуск
 1️⃣ Клонируйте репозиторий
+
 git clone <repository-url>
+
 cd api-monitoring-service
 
 2️⃣ Запуск Backend
