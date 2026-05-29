@@ -67,6 +67,7 @@ mvnw.cmd spring-boot:run
 java -jar target/api-monitoring-service.jar
 
 Backend будет доступен на: http://localhost:8080
+
 3️⃣ Запуск Frontend
 Откройте новый терминал и перейдите в папку frontend
 cd frontend
