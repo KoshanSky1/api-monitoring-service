@@ -41,11 +41,28 @@ Full-stack приложение для мониторинга публичных
 - 📨 **Apache Kafka & Zookeeper** (или KRaft), запущенные локально на порту `9092`
 
 **Проверка установленных версий:**
-```bash
 java -version    # Должно быть: java version "17.x.x"
 node -v          # Должно быть: v18.x.x или выше
 npm -v           # Должно быть: 9.x.x или выше CLI
-```bash
+
+🚀 Пошаговый запуск
+1️⃣ Клонируйте репозиторий
+git clone <repository-url>
+cd api-monitoring-service
+
+2️⃣ Запуск Backend
+# Перейдите в папку backend
+cd backend
+
+# Запуск через Maven Wrapper (Linux/Mac)
+./mvnw spring-boot:run
+
+# Для Windows
+mvnw.cmd spring-boot:run
+
+# ── Альтернативный способ: сборка и запуск JAR ──
+./mvnw clean package -DskipTests
+java -jar target/api-monitoring-service.jar
 
 ## 📸 Скриншоты
  <img width="1228" height="1082" alt="2026-05-28_10-29-36" src="https://github.com/user-attachments/assets/226cbd67-5b0d-44be-9cc2-9d28786969db" />
