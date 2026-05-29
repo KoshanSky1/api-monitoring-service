@@ -53,6 +53,7 @@ git clone <repository-url>
 cd api-monitoring-service
 
 2️⃣ Запуск Backend
+
 Перейдите в папку backend
 cd backend
 
@@ -69,6 +70,7 @@ java -jar target/api-monitoring-service.jar
 Backend будет доступен на: http://localhost:8080
 
 3️⃣ Запуск Frontend
+
 Откройте новый терминал и перейдите в папку frontend
 cd frontend
 
