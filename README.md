@@ -81,6 +81,8 @@ npx ng serve
 Или, если Angular CLI установлен глобально:
 ng serve
 
+Frontend будет доступен на: http://localhost:4200
+
 ## 📸 Скриншоты
  <img width="1228" height="1082" alt="2026-05-28_10-29-36" src="https://github.com/user-attachments/assets/226cbd67-5b0d-44be-9cc2-9d28786969db" />
  
